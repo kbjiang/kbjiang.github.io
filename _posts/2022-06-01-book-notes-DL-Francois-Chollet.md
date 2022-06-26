@@ -17,7 +17,7 @@ tags:
 - ML learns about rules.
 <figure>
 <img src="../assets/images/chap01-ml-paradigm.png" style="width:50%">
-<figcaption>Fig 1.2 ML paradigm. "Generalization: the goal of machine learning"</figcaption>
+<figcaption>Fig 1.2 ML paradigm. </figcaption>
 </figure>
 
 - "The central problem in machine learning and deep learning is to *meaningfully transform* data: in other words, to learn useful *representations* of the input data at hand--representations that get us closer to the expected output."  
@@ -28,7 +28,7 @@ tags:
   - these enable deep learning to *easily* learn complex features *without feature engineering*, as opposed to shallow learning such as SVM.
 
 ### Chapter 2 The mathematical building blocks of neural networks
-- "It follows that you can interpret a neural network as a very complex geometric transformation in a high-dimensional space, implemented via a series of simple steps.- "Uncrumpling paper balls is what machine learning is about: finding neat representations for complex, highly folded data *manifolds* in high-dimensional spaces"
+- "It follows that you can interpret a neural network as a very complex geometric transformation in a high-dimensional space, implemented via a series of simple steps...Uncrumpling paper balls is what machine learning is about: finding neat representations for complex, highly folded data *manifolds* in high-dimensional spaces"
 <figure>
 <img src="../assets/images/chap02-uncrumple-paper.png" style="width:50%">
 <figcaption>Fig 2.14 Crumpled ball of two sheets of paper, blue and red. Each layer of NN represents a simple transformation that unscrumples the ball a little bit. </figcaption>
@@ -38,8 +38,16 @@ tags:
 - "By choosing a network topology (*architecture of model*), you constrain your space of possibilities (*hypothesis space*) to a specific series of tensor operations, mapping input data to output data."
 
 ### Chapter 5 Fundamentals of machine learning
-- Underfitting and overfitting (5.1.1)
-  - "Rare features and spurious correlations", "statistical fluke"
-  - Experiment: adding noisy channels leads to downgraded performance, while adding zero channels does not.
-- *The nature of generalization in deep learning* (5.1.2)
-  - 
+- 5.1.1 Underfitting and overfitting 
+  - Be aware of "rare features and spurious correlations" and "statistical fluke"
+  - Experiment: adding noisy channels leads to downgraded performance, i.e., overfitting, while adding zero channels does not.
+- *5.1.2 The nature of generalization in deep learning*
+  - Optimization (model fitting) vs **generalize**.
+  - "More generally, the manifold hypothesis posits that all natural data lies on a low-dimensional *manifold* within the high-dimensional space where it is encoded...The ability to *interpolate* between samples is the key to understanding generalization in deep learning." Therefore it's important to provide training samples that are representative of all data.
+- 5.3 Improving model fit
+  - If train loss does not go down. Adjust key gradient descent parameters, such as learning rate and batch size.
+  - If train loss goes down, but not valid loss. Something is fundamentally wrong. Check both data and model.
+  - *Always overfit* before tuning for generalization.
+- *5.4 Improving generalization*
+  - Dataset curation, feature engineering, early stopping, regularization
+  - "The core idea is that introducing noise in the output values of a layer can break up happenstance patterns that aren’t significant (what Hinton refers to as *conspiracies*), which the model will start memorizing if no noise is present."
