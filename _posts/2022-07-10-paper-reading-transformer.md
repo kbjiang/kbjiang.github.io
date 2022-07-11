@@ -9,7 +9,9 @@ tags:
 1. $W_Q, W_K, W_V$ do NOT have to of the same size as $d_model$. The multi-head matrices are fractions of $d_model$.
 1. positional encoding
     1. position and order
+        1. look in the direction of position, each has unique wavelengths/phase, which is order.
     1. relative position and distance invariance
+1. Understand the causality mask. It's applied on the attention score. What about the residual connection? The `x` itself does get passed over too.
 1. references:
     1. https://arxiv.org/pdf/1706.03762.pdf
     1. https://jalammar.github.io/illustrated-transformer/
