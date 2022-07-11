@@ -11,13 +11,18 @@ tags:
     1. position and order
         1. look in the direction of position, each has unique wavelengths/phase, which is order.
     1. relative position and distance invariance
-1. Understand the causality mask. It's applied on the attention score. What about the residual connection? The `x` itself does get passed over too.
+1. Understand the causality mask. 
+    1. It's applied on the self-attention sublayer of the decoder, not on the cross-attention. 
+    1. It's applied on the attention score, not after the residual connection. The identity part still carry information from all time stamps/words.
+    1. Image the <sos> -> w1, w1->w2... picture.
+    1. What about the residual connection? The `x` itself does get passed over too.
 1. references:
     1. https://arxiv.org/pdf/1706.03762.pdf
     1. https://jalammar.github.io/illustrated-transformer/
     1. http://nlp.seas.harvard.edu/annotated-transformer/#positional-encoding
     1. https://github.com/hyunwoongko/transformer/blob/master/conf.py
     1. https://kazemnejad.com/blog/transformer_architecture_positional_encoding/
+1. training and stuff
 
 ### thoughts
 1. The Query, Key and Value matrices are just like the filters in CNN. Multi-head is just multi-channel.
