@@ -15,14 +15,19 @@ tags:
     1. It's applied on the self-attention sublayer of the decoder, not on the cross-attention. 
     1. It's applied on the attention score, not after the residual connection. The identity part still carry information from all time stamps/words.
     1. Image the <sos> -> w1, w1->w2... picture.
-    1. What about the residual connection? The `x` itself does get passed over too.
+    1. What about the residual connection? The `x` itself does get passed over too? Actually no.
+1. Cross attention
+    1. $(Q K^T) V \rightarrow (n_{src} * d_{mod}) * (d_{mod} * n_{tgt}) * (n_{tgt} * d_{mod})$
+    1. why no causality mask needed?
 1. references:
     1. https://arxiv.org/pdf/1706.03762.pdf
     1. https://jalammar.github.io/illustrated-transformer/
     1. http://nlp.seas.harvard.edu/annotated-transformer/#positional-encoding
     1. https://github.com/hyunwoongko/transformer/blob/master/conf.py
     1. https://kazemnejad.com/blog/transformer_architecture_positional_encoding/
-1. training and stuff
+    1. https://pytorch.org/tutorials/beginner/transformer_tutorial.html
+    1. https://pytorch.org/docs/stable/_modules/torch/nn/modules/transformer.html#Transformer
+1. training and stuff, labeling smoothing...
 
 ### thoughts
 1. The Query, Key and Value matrices are just like the filters in CNN. Multi-head is just multi-channel.
