@@ -51,3 +51,15 @@ tags:
 - *5.4 Improving generalization*
   - Dataset curation, feature engineering, early stopping, regularization
   - "The core idea is that introducing noise in the output values of a layer can break up happenstance patterns that aren’t significant (what Hinton refers to as *conspiracies*), which the model will start memorizing if no noise is present."
+
+### Chapter 8 Fundamentals of machine learning
+- 8.1.1 Convnet
+    1. why is it efficient: visual patterns are *translation-invariant* and *spatially hierarchical*.
+    1. recommended: dense maps of features (unstrided conv) + max pooling
+- Fine-tuning a pretrained model
+    1. Add custom network on top of pretrained/base model
+    1. Freeze the base network
+    1. **Train added custom part**. Otherwise the error of this part would destroy the part of base model going to be unfreezed/fine-tuned.
+    1. Unfreeze some layer of the base model. Some layers are not supposed to be unfreezed, e.g., *batch normalization*.
+    1. **Jointly train both unfreezed and added**
+
