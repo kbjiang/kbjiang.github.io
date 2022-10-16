@@ -29,6 +29,8 @@ tags:
     1. https://arxiv.org/pdf/1706.03762.pdf
     1. https://jalammar.github.io/illustrated-transformer/
     1. http://nlp.seas.harvard.edu/annotated-transformer/#positional-encoding
+    1. https://youtu.be/1biZfFLPRSY
+    1. https://youtu.be/0SmNEp4zTpc
     1. https://github.com/hyunwoongko/transformer/blob/master/conf.py
     1. https://pytorch.org/tutorials/beginner/transformer_tutorial.html
     1. https://pytorch.org/docs/stable/_modules/torch/nn/modules/transformer.html#Transformer
