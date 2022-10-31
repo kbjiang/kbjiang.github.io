@@ -9,7 +9,11 @@ categories:
   - Tricks & Methodologies
 tags:
 ---
-1. 
+## 1. Workflow
+### 1.1. Data preparation
+- Remove outliers. Extreme ascept ratio, bad quality, etc.
+- Remove obvious labeling errors.
+- *Remove duplicates*. See [hash ]
     $$ \begin{align*}
       H(x) &= \mathbb{E}_{x\sim{P}}[I(x)]  \\
           &= \mathbb{E}_{x\sim{P}}[-\log P(x)] \\
