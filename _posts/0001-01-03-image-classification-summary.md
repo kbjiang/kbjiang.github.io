@@ -1,15 +1,15 @@
 ---
-title: "Misc about natural language generation"
-date: 2022-07-04
+title: "Summary of image classification task (2022)"
+date: 2022-10-30
 header-includes:
   - \usepackage{amssymb}
   - \usepackage{eqnarray}
 categories:
-  - DL metrics
-  - NLG
+  - Image classification
+  - Tricks & Methodologies
 tags:
 ---
-1. Shannon's Entropy
+1. 
     $$ \begin{align*}
       H(x) &= \mathbb{E}_{x\sim{P}}[I(x)]  \\
           &= \mathbb{E}_{x\sim{P}}[-\log P(x)] \\
