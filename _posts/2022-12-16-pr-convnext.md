@@ -1,5 +1,5 @@
 ---
-title: "A ConvNet for the 2020s"
+title: "Paper reading: A ConvNet for the 2020s"
 date: 2022-12-16
 categories:
   - paper reading
