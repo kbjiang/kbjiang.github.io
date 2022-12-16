@@ -1,6 +1,6 @@
 ---
 title: "Random thoughts"
-date: 
+date: 2022-07-04
 categories:
   - random thoughts
 tags:
