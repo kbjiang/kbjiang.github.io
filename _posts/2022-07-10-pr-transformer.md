@@ -29,6 +29,7 @@ tags:
     1. https://arxiv.org/pdf/1706.03762.pdf
     1. https://jalammar.github.io/illustrated-transformer/
     1. http://nlp.seas.harvard.edu/annotated-transformer/#positional-encoding
+	1. https://github.com/jadore801120/attention-is-all-you-need-pytorch/tree/master (recommended by Noga)
     1. https://youtu.be/1biZfFLPRSY
     1. https://youtu.be/0SmNEp4zTpc
     1. https://github.com/hyunwoongko/transformer/blob/master/conf.py
