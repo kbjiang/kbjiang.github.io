@@ -103,7 +103,7 @@ I've always used PyTorch for this. Wanted to implement it from scratch by myself
 	        d_in  = d_in * self.max_mask # broadcast (N, C, H_out, pool_size, W_out, pool_size)
 	        return d_in.reshape(N, C, H_out*self.pool_size, W_out*self.pool_size)
 	```
-5. Full implementation
+1. Full implementation at [here](https://github.com/kbjiang/kbjiang.github.io/blob/master/notebooks/CNN-from-scratch.html)
 ## Lesson learned
 1. In model, use `self.relu=ReLU()` instead of `ReLU(self.conv(x))`. 
 	1. Layers must be instantiated in `__init__` and reused, so backward can access cached values.
