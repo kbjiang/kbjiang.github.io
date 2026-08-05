@@ -1,5 +1,5 @@
 ---
-title: "Implementation: CNN from scratch"
+title: "CNN from scratch"
 date: 2026-04-05
 tags:
   - "implementation"
